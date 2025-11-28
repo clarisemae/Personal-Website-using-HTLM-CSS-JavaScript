@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="design.css">
+    <title>Interactive Instagram Frame</title>
+</head>
+<body>
+     <!-- Navigation Bar -->
+     <header>
+        <a href="#" class="logo">ELLE</a>
+        <nav>
+            <a href="#" class="nav-link active">Home</a>
+            <a href="#" class="nav-link">About</a>
+            <a href="#" class="nav-link">Hobbies</a>
+            <a href="#" class="nav-link">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+     <section class="home">
+        <!-- Instagram Style Image Frame -->
+        <div class="instagram-frame">
+            <div class="header">
+                <div class="profile">
+                <img src="IMAGES/images/profile (1).jpg" alt="Profile Picture">
+                <span>Clarise Mae Elle</span>
+            </div>
+            <div class="dots">
+                <i class="fa fa-circle"></i>
+                <i class="fa fa-circle"></i>
+                <i class="fa fa-circle"></i>
+            </div>
+        </div>
+        <div class="image-carousel">
+            <img src="IMAGES/images/profile (5).jpg" alt="Main Image 1" class="active">
+            <img src="IMAGES/images/profile (3).jpg" alt="Main Image 2">
+            <img src="IMAGES/images/profile (4).jpg" alt="Main Image 3">
+          </div>
+            <div class="navigation-dots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+            </div>
+        <div class="footer">
+            <i class="fa fa-heart heart-icon"></i>
+            <i class="fa fa-comment"></i>
+            <i class="fa fa-paper-plane"></i>
+        </div>
+    </div>
+
+     <!-- Home Content -->
+     <div class="home-content">
+        <h1>Hi, welcome to my website!</h1>
+        <p>
+            I'm Clarise Mae Elle<br>
+            a 3rd Year BS in Computer Science Major<br>
+            Studying at Technological University of the Philippines - Manila
+        </p>
+
+        <div class="social-icons">
+            <a href="https://www.facebook.com/clarisemae.elle.3" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/clrs.mae/" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://github.com/clarisemae" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+        <a href="#" class="btn">About Me</a>
+    </div>
+</section>
+
+<div id="animation-area">
+    <!-- Falling cat images will be added here by JavaScript -->
+</div>
+
+<script src="JS Script.js"></script>
+</body>
+</html>

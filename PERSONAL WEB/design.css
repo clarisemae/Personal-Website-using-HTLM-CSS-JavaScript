@@ -1,0 +1,252 @@
+/* Global Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #5e6469;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+    font-size: 36px;
+    text-decoration: none;
+    letter-spacing: 2px;
+
+}
+
+nav a {
+    font-family: 'Playfair Display', serif;
+    color: #f8f9fa;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+nav a.active, nav a:hover {
+    background-color: #ebecf0;
+    color: #343a40;
+    border-radius: 5px;
+}
+
+/* Main Section */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px;
+    gap: 60px; /* Add space between the image and text */
+}
+
+
+/* Instagram Frame */
+.instagram-frame {
+    width: 100%; /* Make it responsive */
+    max-width: 500px; /* Maximum size for larger screens */
+    border: 2px solid #000;
+    box-shadow: 5px 5px 0 #000;
+    background-color: #fff;
+    position: relative;
+    margin-right: 20px;
+}
+
+/* Header (profile and dots) */
+.instagram-frame .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.instagram-frame .profile {
+    display: flex;
+    align-items: center;
+}
+
+.instagram-frame .profile img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.instagram-frame .profile span {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.instagram-frame .dots i {
+    font-size: 10px;
+    color: #333;
+}
+
+/* Image Carousel */
+.image-carousel {
+    position: relative;
+}
+
+.image-carousel {
+    width: 100%; /* Full width of parent */
+    aspect-ratio: 1 / 1; /* Ensures the container is a square */
+    overflow: hidden; /* Ensures content outside the square is hidden */
+}
+
+.image-carousel img {
+    width: 100%; /* Image fills the frame */
+    height: 100%; /* Image height matches frame */
+    object-fit: cover; /* Ensures the image covers the square frame */
+}
+
+.image-carousel img {
+    display: none; /* Hide all images by default */
+}
+
+.image-carousel img.active {
+    display: block; /* Show the active image */
+}
+
+/* Footer (icons) */
+.instagram-frame .footer {
+    display: flex;
+    justify-content: start;
+    padding: 10px;
+    gap: 30px;
+}
+
+.instagram-frame .footer i {
+    font-size: 30px;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Heart icon styles */
+.instagram-frame .footer .heart-icon {
+    color: #333;
+}
+
+.instagram-frame .footer .heart-icon.liked {
+    color: red;
+}
+
+/* Navigation dots */
+.navigation-dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.navigation-dots .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.navigation-dots .dot.active {
+    background-color: #333;
+}
+
+/* Home Content Styling */
+.home-content {
+    width: 100%; /* Temporarily set the container width to full */
+    max-width: 800px; /* Adjust based on your design */
+    margin-left: 20px;
+}
+
+.home-content h1 {
+    font-family: 'Playfair Display', serif; /* Apply heading font */
+    font-size: 50px; /* Adjust heading size */
+    color: #343a40;
+    line-height: 1.2;
+}
+
+.home-content p {
+    font-size: 20px; /* Adjust paragraph text size */
+    white-space: normal; /* Allow natural text wrapping */
+    word-wrap: break-word; /* Prevent overflowing words */
+    line-height: 1.4;
+}
+
+
+.social-icons a {
+    text-decoration: none;
+    color: #6c757d;
+    font-size: 35px;
+    margin-right: 10px;
+}
+
+.social-icons a:hover {
+    color: rgba(255, 111, 97, 0.7); /* Coral hover effect */
+}
+
+.btn {
+    font-family: 'Playfair Display', serif;
+    display: inline-block;
+    margin-top: 20px;
+    background-color: rgba(93, 159, 235, 0.8); /* Blue with transparency */
+    color: white;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+.btn:hover {
+    background-color: rgba(39, 36, 36, 0.8); /* Coral hover effect */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-content {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+/* Make the entire screen an animation area */
+#animation-area {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none; /* Disable interactions with the falling cats */
+    z-index: -1; /* Ensure the cats fall behind the main content */
+    overflow: hidden; /* Ensure images don't overflow the window */
+}
+
+/* Style the cat images */
+.cat {
+    position: absolute;
+    top: -100px; /* Start slightly off the top of the screen */
+    width: 50px; /* Adjust size of cat images */
+    animation: fall linear infinite;
+    z-index: -1;
+}
+
+/* Keyframes for falling effect */
+@keyframes fall {
+    0% {
+        transform: translateY(0); /* Start at the top */
+    }
+    100% {
+        transform: translateY(100vh); /* Move to the bottom of the screen */
+    }
+}
