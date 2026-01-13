@@ -358,43 +358,50 @@ nav a.active, nav a:hover {
 }
 
 /* CONTACT SECTION STYLING */
-.contact-section {
-    background-color: #6c757d; /* Dark gray background */
-    padding: 100px 20px;
-    color: #fff;
+section#contact.contact-section {
+    background-color: #5e6469; /* Matches your header color */
+    padding: 80px 20px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    min-height: 60vh; /* Ensures it's tall enough */
 }
 
+/* Container to hold the two columns side-by-side */
 .contact-container {
-    max-width: 1000px;
+    max-width: 1100px;
     width: 100%;
     display: flex;
-    align-items: center;
-    gap: 60px;
+    flex-direction: row; /* Forces side-by-side layout */
+    align-items: flex-start;
+    gap: 50px;
 }
 
+/* --- LEFT COLUMN: The Image --- */
 .contact-left {
-    flex: 0 0 350px; 
+    flex: 0 0 350px; /* Fixed width for the image card */
+    width: 350px;
 }
 
-
-.contact-card {
-    width: 100%;
-    background-color: #fff;
-    border: 2px solid #000;
-    box-shadow: 6px 6px 0 #333;
+/* Force the Contact Card to behave */
+.contact-left .instagram-frame {
+    width: 100% !important; /* Override any other frame settings */
+    max-width: 100%;
     margin: 0;
+    background: #fff;
+    border: 2px solid #000;
+    box-shadow: 8px 8px 0 #000; /* Deep shadow like the design */
 }
 
-.contact-card .image-area {
+/* Fix the image inside */
+.contact-left .image-area {
     width: 100%;
-    padding-top: 100%;
+    padding-top: 100%; /* Square */
     position: relative;
     overflow: hidden;
 }
 
-.contact-card .image-area img {
+.contact-left .image-area img {
     position: absolute;
     top: 0;
     left: 0;
@@ -403,73 +410,66 @@ nav a.active, nav a:hover {
     object-fit: cover;
 }
 
-/* RIGHT SIDE: Text Content */
+/* --- RIGHT COLUMN: The Text --- */
 .contact-right {
-    flex: 1;
+    flex: 1; /* Takes the rest of the space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .contact-title {
     font-family: 'Playfair Display', serif;
-    font-size: 48px;
-    text-decoration: underline;
-    margin-bottom: 20px;
-    margin-top: 0;
+    font-size: 50px;
     color: #fff;
+    text-decoration: underline;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    margin-top: -10px; /* Aligns top of text with top of image */
+    margin-bottom: 30px;
 }
 
+/* The Light Gray Box */
 .contact-box {
     background-color: #ebecf0;
-    color: #343a40;
     padding: 40px;
-    border-radius: 8px;
-    box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    color: #343a40;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .contact-box p {
-    font-size: 20px;
-    margin-bottom: 20px;
+    font-size: 18px;
+    margin-bottom: 15px;
     line-height: 1.6;
-    word-break: break-all; /* Ensures long links don't break the layout */
-}
-
-.contact-box strong {
-    font-family: 'Playfair Display', serif;
-    font-size: 22px;
 }
 
 .contact-box a {
-    color: #343a40;
+    color: #333;
     text-decoration: none;
-    transition: color 0.3s;
+    word-break: break-all; /* Prevents long link from breaking layout */
 }
 
 .contact-box a:hover {
-    color: #6c757d;
     text-decoration: underline;
+    color: #000;
 }
 
-/* Responsive: Stack them on mobile */
-@media (max-width: 850px) {
+/* --- MOBILE RESPONSIVE --- */
+@media (max-width: 900px) {
     .contact-container {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: column; /* Stack on mobile */
+        align-items: center;
     }
-
+    
     .contact-left {
-        flex: 0 0 auto;
         width: 100%;
         max-width: 350px;
+        margin-bottom: 40px;
     }
     
-    .contact-box {
-        text-align: left; /* Keep text aligned left for readability */
-        padding: 20px;
-    }
-    
-    .contact-box p {
-        font-size: 16px;
+    .contact-title {
+        text-align: center;
+        margin-top: 0;
     }
 }
 
