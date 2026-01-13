@@ -209,9 +209,9 @@ nav a.active, nav a:hover {
 
 /* SKILLS SECTION */
 #skills {
-    width: 120%;
+    width: 100%;
     background-color: transparent;
-    padding: 200px 0;
+    padding: 300px 0;
 }
 
 .skills-container {
