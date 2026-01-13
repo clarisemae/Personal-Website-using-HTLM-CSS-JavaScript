@@ -302,6 +302,12 @@ nav a.active, nav a:hover {
     flex-direction: column;
     min-width: 0;
     overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projects-grid .instagram-frame:hover {
+    transform: translateY(-10px); /* Moves the card up */
+    box-shadow: 8px 8px 0 rgba(0,0,0,0.2); /* Makes the shadow deeper */
 }
 
 .projects-grid .image-area {
@@ -315,21 +321,25 @@ nav a.active, nav a:hover {
 
 .projects-grid .image-area a {
     display: block;
-    position: absolute; /* The link now takes the absolute position */
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     cursor: pointer;
-    z-index: 1; /* Ensures the link is clickable */
+    z-index: 1;
 }
 
 .projects-grid .image-area img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Keeps the image covering the square */
+    object-fit: cover;
     display: block;
-    /* We removed position:absolute from here because the <a> tag handles it now */
+    transition: transform 0.5s ease;
+}
+
+.projects-grid .instagram-frame:hover .image-area img {
+    transform: scale(1.1);
 }
 
 /* Footer Adjustments */
