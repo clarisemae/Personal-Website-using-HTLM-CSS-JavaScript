@@ -5,13 +5,6 @@ heartIcon.addEventListener('click', () => {
     heartIcon.classList.toggle('liked');
 });
 
-// Share Icon Link
-
-
-
-
-
-
 
 // Image Carousel Functionality
 const images = document.querySelectorAll('.image-carousel img');
@@ -34,13 +27,13 @@ dots.forEach(dot => {
 
 // JavaScript to create the falling cat rain effect
 const animationArea = document.getElementById('animation-area');
-// Create multiple falling cats
+
 function createFallingCats() {
-    for (let i = 0; i < 20; i++) { // You can change the number of cats
+    for (let i = 0; i < 20; i++) { // number of cats
         const cat = document.createElement('img');
-        cat.src = 'IMAGES/images/cat.png'; // Correct relative path based on your folder structure
+        cat.src = 'images/images/cat.png';
         cat.classList.add('cat');
-        console.log(cat.src); // Log the image source to check if it's correct'
+        console.log(cat.src);
 
         // Append the cat to the animation area
         animationArea.appendChild(cat);
@@ -55,5 +48,5 @@ function createFallingCats() {
         animationArea.appendChild(cat);
     }
 }
-// Run the function to create cats when the page loads
+
 createFallingCats();
