@@ -265,6 +265,74 @@ nav a.active, nav a:hover {
     }
 }
 
+
+/* PROJECTS SECTION STYLING */
+.projects-section {
+    padding: 50px 20px;
+    background-color: #ebecf0; /* Slightly darker to separate sections */
+}
+
+.projects-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    letter-spacing: 2px;
+    text-decoration: underline;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+/* Grid Layout for Projects */
+.projects-grid {
+    display: grid;
+    /* This creates a responsive grid: minimum 250px wide per card, fills available space */
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    justify-content: center;
+}
+
+/* Adjusting the Instagram Frame for Grid Usage */
+.projects-grid .instagram-frame {
+    width: 100%;        /* Fill the grid cell */
+    max-width: 100%;    /* Override the 500px limit from home section */
+    margin: 0;          /* Remove margin since grid gap handles spacing */
+    box-shadow: 4px 4px 0 #000; /* Slightly smaller shadow for smaller cards */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Image Area Styling inside Project Card */
+.projects-grid .image-area {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Keeps the image perfectly square */
+    overflow: hidden;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #eee;
+}
+
+.projects-grid .image-area img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Footer Adjustments for Projects */
+.projects-grid .footer {
+    display: flex;
+    justify-content: space-between; /* Spreads icons out */
+    padding: 10px 15px;
+}
+
+.bookmark-icon {
+    margin-left: auto; /* Pushes bookmark to the far right */
+}
+
 /* Make the entire screen an animation area */
 #animation-area {
     position: fixed;
