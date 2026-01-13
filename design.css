@@ -168,13 +168,13 @@ nav a.active, nav a:hover {
 
 .home-content h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 50px;
+    font-size: 70px;
     color: #343a40;
     line-height: 1.2;
 }
 
 .home-content p {
-    font-size: 20px;
+    font-size: 40px;
     white-space: normal;
     word-wrap: break-word;
     line-height: 1.4;
