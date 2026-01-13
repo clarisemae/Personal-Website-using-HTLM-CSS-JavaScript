@@ -162,7 +162,6 @@ nav a.active, nav a:hover {
 /* Home Content Styling */
 .home-content {
     width: 100%;
-    max-width: 800px;
     margin-left: 20px;
 }
 
@@ -228,7 +227,6 @@ nav a.active, nav a:hover {
 .skills-box {
     text-align: center;
     width: 100%;
-    max-width: 800px;
 }
 
 .skills-box h2 {
