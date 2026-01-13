@@ -313,15 +313,23 @@ nav a.active, nav a:hover {
     overflow: hidden;
 }
 
-/* THE IMAGE ITSELF */
-.projects-grid .image-area img {
-    position: absolute;
+.projects-grid .image-area a {
+    display: block;
+    position: absolute; /* The link now takes the absolute position */
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    cursor: pointer;
+    z-index: 1; /* Ensures the link is clickable */
+}
+
+.projects-grid .image-area img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Keeps the image covering the square */
     display: block;
+    /* We removed position:absolute from here because the <a> tag handles it now */
 }
 
 /* Footer Adjustments */
