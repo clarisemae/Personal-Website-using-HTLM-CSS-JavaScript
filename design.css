@@ -338,10 +338,6 @@ nav a.active, nav a:hover {
     transition: transform 0.5s ease;
 }
 
-.projects-grid .instagram-frame:hover .image-area img {
-    transform: scale(1.1);
-}
-
 /* Footer Adjustments */
 .projects-grid .footer {
     display: flex;
