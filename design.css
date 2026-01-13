@@ -287,16 +287,13 @@ nav a.active, nav a:hover {
     text-transform: uppercase;
 }
 
-/* THE GRID */
 .projects-grid {
     display: grid;
-    /* This creates columns that are at least 280px wide */
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
     justify-content: center;
 }
 
-/* THE CARD - Fixed to stop expansion */
 .projects-grid .instagram-frame {
     width: 100%;
     max-width: 100%; 
@@ -304,16 +301,14 @@ nav a.active, nav a:hover {
     box-shadow: 4px 4px 0 #000;
     display: flex;
     flex-direction: column;
-    /* THESE TWO LINES FIX THE "BIG IMAGE" BUG: */
-    min-width: 0;      /* Allows grid item to shrink smaller than its content */
-    overflow: hidden;  /* Cuts off anything sticking out */
+    min-width: 0;
+    overflow: hidden;
 }
 
-/* THE IMAGE CONTAINER - Forces a Square Shape */
 .projects-grid .image-area {
     width: 100%;
     position: relative;
-    padding-top: 100%; /* This Hack forces a perfect 1:1 square ratio */
+    padding-top: 100%;
     background-color: #f0f0f0;
     border-bottom: 1px solid #eee;
     overflow: hidden;
@@ -321,12 +316,12 @@ nav a.active, nav a:hover {
 
 /* THE IMAGE ITSELF */
 .projects-grid .image-area img {
-    position: absolute; /* Puts image inside the square container */
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Zooms in to fill square without stretching */
+    object-fit: cover;
     display: block;
 }
 
