@@ -45,14 +45,14 @@ nav a.active, nav a:hover {
     justify-content: center;
     align-items: flex-start;
     padding: 50px;
-    gap: 60px; /* Add space between the image and text */
+    gap: 60px;
 }
 
 
 /* Instagram Frame */
 .instagram-frame {
-    width: 100%; /* Make it responsive */
-    max-width: 500px; /* Maximum size for larger screens */
+    width: 100%;
+    max-width: 500px;
     border: 2px solid #000;
     box-shadow: 5px 5px 0 #000;
     background-color: #fff;
@@ -97,23 +97,23 @@ nav a.active, nav a:hover {
 }
 
 .image-carousel {
-    width: 100%; /* Full width of parent */
-    aspect-ratio: 1 / 1; /* Ensures the container is a square */
-    overflow: hidden; /* Ensures content outside the square is hidden */
+    width: 100%; 
+    aspect-ratio: 1 / 1; 
+    overflow: hidden;
 }
 
 .image-carousel img {
-    width: 100%; /* Image fills the frame */
-    height: 100%; /* Image height matches frame */
-    object-fit: cover; /* Ensures the image covers the square frame */
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
 }
 
 .image-carousel img {
-    display: none; /* Hide all images by default */
+    display: none;
 }
 
 .image-carousel img.active {
-    display: block; /* Show the active image */
+    display: block; 
 }
 
 /* Footer (icons) */
@@ -168,16 +168,16 @@ nav a.active, nav a:hover {
 
 .home-content h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 50px;
+    font-size: 40px;
     color: #343a40;
     line-height: 1.2;
 }
 
 .home-content p {
-    font-size: 30px;
+    font-size: 20px;
     white-space: normal;
     word-wrap: break-word;
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
 
@@ -227,7 +227,8 @@ nav a.active, nav a:hover {
 
 .skills-box {
     text-align: center;
-    width: 120%;
+    width: 100%;
+    max-width: 800px;
 }
 
 .skills-box h2 {
