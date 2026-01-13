@@ -254,7 +254,7 @@ nav a.active, nav a:hover {
 .skills-card li {
     font-size: 18px;
     margin-bottom: 12px;
-    font-family: Arial, sans-serif;
+    font-family: 'Playfair Display', serif;
 }
 
 /* Responsive */
