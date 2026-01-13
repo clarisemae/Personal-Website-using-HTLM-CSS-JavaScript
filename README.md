@@ -1,4 +1,4 @@
-# 🎀 Personal Portfolio Website - Clarise Mae Elle
+# Personal Portfolio Website
 
 Welcome to my personal portfolio website! This project showcases my background, technical skills, and projects as a 4th-year Computer Science student. It features a unique, interactive "Instagram-style" design and some fun animations.
 
