@@ -223,12 +223,11 @@ nav a.active, nav a:hover {
     display: flex;
     justify-content: space-between;
     gap: 40px;
-    background-color: #f8f9fa;
 }
 
 .skills-box {
     text-align: center;
-    width: 100%;
+    width: 120%;
 }
 
 .skills-box h2 {
